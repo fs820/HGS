@@ -192,6 +192,13 @@ void UpdateGame(void)
 				g_gameState = GAMESTATE_END;
 				g_bClear = false;
 			}
+			else if (GetKeyboradTrigger(DIK_0))
+			{
+#ifdef _DEBUG
+				g_gameState = GAMESTATE_END;
+				g_bClear = false;
+#endif
+			}
 			break;
 		case GAMESTATE_END:
 			g_nCounterGameState++;
